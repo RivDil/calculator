@@ -5,15 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <div id="mainCalculator">
+    <div id="calculator">
+
+
         <section id="mainCalculator-sreen">
-            <p id="query" class="screenTitle">aqui va la query</p>
-            <p id="result" class="screenTitle">aqui va el resultado</p>
+            <input type="text" placeholder="0" id="input" readonly="readonly"  maxlength="8">
         </section>
-        
+        <div id="mainCalculator">
+            <section id="calculatorNumbers">
+                <button class="numButtons allButtons">7</button>
+                <button class="numButtons allButtons">8</button>
+                <button class="numButtons allButtons">9</button>
+                <button class="numButtons allButtons">4</button>
+                <button class="numButtons allButtons">5</button>
+                <button class="numButtons allButtons">6</button>
+                <button class="numButtons allButtons">1</button>
+                <button class="numButtons allButtons">2</button>
+                <button class="numButtons allButtons">3</button>
+                <button class="numButtons allButtons">0</button>
+                <button class="operatorButtons allButtons" id="sumB" value="+">+</button>
+                <button class="operatorButtons allButtons" id="subB" value="-">-</button>
+                <button class="operatorButtons allButtons" id="multB" value="*">X</button>
+                <button class="operatorButtons allButtons" id="divB" value="/">/</button>
+                <button class="operatorButtons allButtons" id="equals" value="=">=</button>
+                <button class="operatorButtons allButtons" id="clear" value="c">C</button>
+                <button class="operatorButtons allButtons" id="dot" value=".">.</button>
+                <button class="operatorButtons allButtons" id="percentB" value="%">%</button>
+                <button class="operatorButtons allButtons" id="ceB" value="CE">CE</button>
+                <button class="operatorButtons allButtons" id="rootB" value="root">root</button>
+            </section>
+            <div id="display"></div>
+        </div>
+
     </div>
     <script src="./index.js"></script>
 </body>
