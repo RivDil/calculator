@@ -12,30 +12,30 @@
 
 
         <section id="mainCalculator-sreen">
-            <input type="text" placeholder="0" id="input" readonly="readonly"  maxlength="8">
+            <input type="text" placeholder="0" id="input" readonly="readonly"  maxlength="12">
         </section>
         <div id="mainCalculator">
             <section id="calculatorNumbers">
-                <button class="numButtons allButtons">7</button>
-                <button class="numButtons allButtons">8</button>
-                <button class="numButtons allButtons">9</button>
-                <button class="numButtons allButtons">4</button>
-                <button class="numButtons allButtons">5</button>
-                <button class="numButtons allButtons">6</button>
-                <button class="numButtons allButtons">1</button>
-                <button class="numButtons allButtons">2</button>
-                <button class="numButtons allButtons">3</button>
-                <button class="numButtons allButtons">0</button>
-                <button class="operatorButtons allButtons" id="sumB" value="+">+</button>
-                <button class="operatorButtons allButtons" id="subB" value="-">-</button>
-                <button class="operatorButtons allButtons" id="multB" value="*">X</button>
-                <button class="operatorButtons allButtons" id="divB" value="/">/</button>
-                <button class="operatorButtons allButtons" id="equals" value="=">=</button>
-                <button class="operatorButtons allButtons" id="clear" value="c">C</button>
-                <button class="operatorButtons allButtons" id="dot" value=".">.</button>
-                <button class="operatorButtons allButtons" id="percentB" value="%">%</button>
-                <button class="operatorButtons allButtons" id="ceB" value="CE">CE</button>
-                <button class="operatorButtons allButtons" id="rootB" value="root">root</button>
+                <button class="numButtons allButtons displayButtons">7</button>
+                <button class="numButtons allButtons displayButtons">8</button>
+                <button class="numButtons allButtons displayButtons">9</button>
+                <button class="numButtons allButtons displayButtons">4</button>
+                <button class="numButtons allButtons displayButtons">5</button>
+                <button class="numButtons allButtons displayButtons">6</button>
+                <button class="numButtons allButtons displayButtons">1</button>
+                <button class="numButtons allButtons displayButtons">2</button>
+                <button class="numButtons allButtons displayButtons">3</button>
+                <button class="numButtons allButtons displayButtons">0</button>
+                <button class="allButtons displayButtons" id="dot" value=".">.</button>
+                <button class="operatorButtons allButtons displayButtons" id="sumB" value="+">+</button>
+                <button class="operatorButtons allButtons displayButtons" id="subB" value="-">-</button>
+                <button class="operatorButtons allButtons displayButtons" id="multB" value="*">*</button>
+                <button class="operatorButtons allButtons displayButtons" id="divB" value="/">/</button>
+                <button class="operatorButtons allButtons displayButtons" id="percentB" value="%">%</button>
+                <button class="allButtons displayButtons" id="plusOrMinus" value="-">+/-</button>
+                <button class="allButtons" id="equals" value="=" onclick="inputValue()">=</button>
+                <button class="allButtons" id="ceB" value="CE" onclick="clearDisplay()">CE</button>
+                <button class="allButtons" id="clear" value="c" onclick="eliminateC()">C</button>
             </section>
             <div id="display"></div>
         </div>

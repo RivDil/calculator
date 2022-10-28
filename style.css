@@ -7,7 +7,7 @@ body{
     height: 80vh;
     display: grid;
     place-content: center;
-    background-color: rgb(253, 234, 125);
+    background-color: rgb(181, 173, 110);
 }
 #calculator{
     max-width: 320px;
@@ -39,7 +39,7 @@ body{
     border: none;
     box-shadow: 1px 9px 20px -15px rgba(0,0,0,1);
     border-radius: 10px;
-    border: 1px solid  rgb(108, 108, 108);
+    border: 2px solid  rgb(108, 108, 108);
 }
 .allButtons:hover{
     opacity: 0.5;
@@ -57,13 +57,14 @@ body{
     grid-row: 1;
     grid-column: 1;
 }
-#rootB{
+#plusOrMinus{
+    display: none;
     grid-row:1;
     grid-column: 2;
 }
 #ceB{
     grid-row:1;
-    grid-column: 3;
+    grid-column: 2/4;
     background-color: rgb(201, 175, 27);
     border: none;
 }
